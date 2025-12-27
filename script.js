@@ -29,14 +29,15 @@ document.getElementById('regForm').addEventListener('submit', function(e) {
     this.reset();
 });
 
-// Scroll-based Header Styling
-window.addEventListener('scroll', () => {
-    const nav = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        nav.style.background = '#020617'; // Darker on scroll
-        nav.style.padding = '1rem 5%';
-    } else {
-        nav.style.background = '#0f172a';
-        nav.style.padding = '1rem 5%';
-    }
-});
+// // Scroll-based Header Styling
+// window.addEventListener('scroll', () => {
+//     const nav = document.querySelector('.navbar');
+//     if (window.scrollY > 50) {
+//         nav.style.background = '#020617'; // Darker on scroll
+//         nav.style.padding = '1rem 5%';
+//     } else {
+//         nav.style.background = '#0f172a';
+//         nav.style.padding = '1rem 5%';
+//     }
+
+// });
