@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVA schedules</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar" data-aos="slide-down">
+            <div style="flex-direction: row; display: flex; align-items: center;" data-aos="fade-down" data-aos-duration="2000">
+                <img src="assets/Logo.webp" height="50px" width="50px">
+                <div class="logo" > Pondicherry <span>Volleyball </span> Association</div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="0"><a href="index.html">Home</a></li>
+                <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200"><a href="index.html#aboutus">About Us</a></li>
+                <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400"><a href="index.html#officials">Officials</a></li>
+                <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800"><a href="index.html#register">Register</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <Section id="home" class="hero-schedule" style="height: 100vh;">
+        <div class="hero-content">
+            <h1 data-aos="zoom-in" data-aos-duration="2000">Recent Schedules</h1>
+            <p data-aos="zoom-in" data-aos-duration="2000">No schedules available right now.</p>
+            <div data-aos="zoom-in" class="hero-btns">
+                <a data-aos="fade-up" data-aos-duration="2000" href="index.html#register" data-aos-delay="100" class="btn-primary">Join Us</a>
+                <a data-aos="fade-up" data-aos-duration="2000" href="index.html" data-aos-delay="200" class="btn-outline">Back To Home</a>
+            </div>
+        </div>
+    </Section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
