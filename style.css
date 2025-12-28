@@ -33,6 +33,11 @@ html { scroll-behavior: smooth; }
 span { color: var(--accent); }
 
 .nav-links { display: flex; list-style: none; }
+
+.nav-links li{
+    padding: 10px;
+}
+
 .nav-links li a {
     color: white;
     text-decoration: none;
@@ -698,3 +703,4 @@ footer { background: var(--primary); color: white; padding: 3rem 0; text-align: 
 @media (max-width: 600px) {
     .gallery-grid { column-count: 1; }
 }
+
