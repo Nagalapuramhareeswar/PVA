@@ -95,9 +95,10 @@ span { color: var(--accent); }
 @media screen and (max-width: 768px) {
     .dropdown-content {
         position: static;
-        display: none;
+        display: block;
         box-shadow: none;
-        padding-left: 20px;
+        margin-top: 10px;
+        padding-left: 0px;
     }
     .dropdown:hover .dropdown-content {
         display: block;
@@ -703,4 +704,5 @@ footer { background: var(--primary); color: white; padding: 3rem 0; text-align: 
 @media (max-width: 600px) {
     .gallery-grid { column-count: 1; }
 }
+
 
