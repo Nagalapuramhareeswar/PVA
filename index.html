@@ -9,7 +9,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body draggable="false">
 
     <header>
         <nav class="navbar" data-aos="slide-down">
@@ -21,8 +21,8 @@
                 <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="0"><a href="#home">Home</a></li>
                 <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200"><a href="#aboutus">About Us</a></li>
                 <li class="dropdown" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
-                    <a href="javascript:void(0)" class="dropbtn">Explore <i class="fas fa-caret-down"></i></a>
-                    <div class="dropdown-content">
+                    <a href="javascript:void(0)" class="dropbtn" id="dropbtn">Explore <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content" id="dropdown-content">
                         <a href="gallery.html">Gallery</a>
                         <a href="achievements.html">Achievements</a>
                         <a href="schedule.html">Schedules</a>
@@ -229,7 +229,7 @@
     
             <div class="member-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
                 <div class="card-image">
-                    <img src="assets/default.png" alt="PVA Logo">
+                    <img src="assets/harikrishna.png" alt="PVA Logo">
                 </div>
                 <div class="card-info">
                     <p class="member-name">Shri. S. Arikrishnan</p>
@@ -265,7 +265,7 @@
     
             <div class="member-card" data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000">
                 <div class="card-image">
-                    <img src="assets/default.png" alt="PVA Logo">
+                    <img src="assets/datchana.png" alt="PVA Logo">
                 </div>
                 <div class="card-info">
                     <p class="member-name">Shri. V. Datchana</p>
@@ -282,7 +282,7 @@
             </div>
             <div class="member-card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="2000">
                 <div class="card-image">
-                    <img src="assets/default.png" alt="PVA Logo">
+                    <img src="assets/vishu.png" alt="PVA Logo">
                 </div>
                 <div class="card-info">
                     <p class="member-name">Shri. P. Visvassoundaram</p>
@@ -336,17 +336,17 @@
             <h2 class="section-title">Join the Association</h2>
             <form id="regForm" class="contact-form">
                 <div class="form-row">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
+                    <input type="text" name="First name" placeholder="First Name *" required>
+                    <input type="text" name="Last Name" placeholder="Last Name *" required>
                 </div>
-                <input type="email" placeholder="Email Address" required>
-                <select required>
-                    <option value="" disabled selected>Experience Level</option>
-                    <option value="beginner">Beginner (C)</option>
-                    <option value="intermediate">Intermediate (B/BB)</option>
-                    <option value="advanced">Advanced (A/Open)</option>
+                <input type="email" name="email" placeholder="Email Address *" required>
+                <select required name="Experience">
+                    <option value="" disabled selected>Experience Level <span style="color: red;">*</span> </option>
+                    <option value="beginner (C)">Beginner (C)</option>
+                    <option value="intermediate (B/BB)">Intermediate (B/BB)</option>
+                    <option value="advanced (A/Open)">Advanced (A/Open)</option>
                 </select>
-                <textarea placeholder="Tell us if you are joining as an individual or a full team..." rows="4"></textarea>
+                <textarea name="message" placeholder="Tell us if you are joining as an individual or a full team..." rows="4"></textarea>
                 <button type="submit" class="btn-submit">Submit Registration</button>
             </form>
         </div>
