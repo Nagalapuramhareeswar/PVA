@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PVA schedules</title>
+    <title>Volleyball Association | Official Site</title>
     <link rel="icon" type="image/png" href="assets/Logo.webp">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body draggable="false">
     <header>
         <nav class="navbar" data-aos="slide-down">
             <div style="flex-direction: row; display: flex; align-items: center;" data-aos="fade-down" data-aos-duration="2000">
@@ -16,8 +17,15 @@
                 <div class="logo" > Pondicherry <span>Volleyball </span> Association</div>
             </div>
             <ul class="nav-links" id="navLinks">
-                <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="0"><a href="index.html">Home</a></li>
+                <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="0"><a href="index.html#home">Home</a></li>
                 <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="200"><a href="index.html#aboutus">About Us</a></li>
+                <li class="dropdown" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
+                    <a href="javascript:void(0)" class="dropbtn">Explore <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="gallery.html">Gallery</a>
+                        <a href="achievements.html">Achievements</a>
+                    </div>
+                </li>
                 <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="400"><a href="index.html#officials">Officials</a></li>
                 <li data-aos="fade-left" data-aos-duration="2000" data-aos-delay="800"><a href="index.html#register">Register</a></li>
             </ul>
@@ -43,5 +51,4 @@
         AOS.init();
     </script>
 </body>
-
 </html>
