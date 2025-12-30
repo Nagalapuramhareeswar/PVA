@@ -12,7 +12,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', system-ui, sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
 }
+
+    img {
+        pointer-events: none;
+    }
+
+    input, textarea {
+        user-select: text;
+    }
 
 html { scroll-behavior: smooth; }
 
@@ -32,7 +45,7 @@ html { scroll-behavior: smooth; }
 .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -1px; }
 span { color: var(--accent); }
 
-.nav-links { display: flex; list-style: none; }
+.nav-links { display: flex; list-style: none;}
 
 .nav-links li{
     padding: 10px;
@@ -704,5 +717,3 @@ footer { background: var(--primary); color: white; padding: 3rem 0; text-align: 
 @media (max-width: 600px) {
     .gallery-grid { column-count: 1; }
 }
-
-
