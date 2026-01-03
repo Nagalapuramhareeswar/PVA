@@ -189,6 +189,37 @@ span {
     text-shadow: #000000 5px 5px 10px;
 }
 
+.brush-heading {
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.brush-heading span {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 700;
+  color: #111;
+  padding: 0.4em 0.8em;
+  z-index: 1;
+}
+
+/* light oil brush stroke */
+.brush-heading span::before {
+  content: "";
+  position: absolute;
+  left: -9%;
+  top: 60%;
+  transform: translateY(-50%) rotate(-1deg);
+  width: 118%;
+  height: 90%;
+  background: url("dry-brush-blue-realistic.svg") no-repeat center;
+  background-size: 100% 100%;
+  z-index: -1;
+  opacity:1;
+}
+
+
 .hero-gallery p {
     font-size: 1.2rem;
     max-width: 700px;
